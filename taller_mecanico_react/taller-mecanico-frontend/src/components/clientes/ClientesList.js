@@ -3,8 +3,6 @@ import {
   fetchClientes,
   fetchVehiculos,
   fetchReparaciones,
-  createCliente,
-  createVehiculo,
 } from "../../services/api";
 
 const ClientesList = () => {
