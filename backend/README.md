@@ -39,6 +39,11 @@ pip install -r requirements.txt
 ```python
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://usuario:contraseña@localhost/taller_mecanico'
 ```
+4.1 Instalacion dependecias para MySQL mayor a 8.0
+    pip install flask_sqlalchemy 
+    pip install pymysql 
+    pip install mysql-connector-python 
+    pip install cryptography
 
 ⚠️ Asegúrate de tener creada la base de datos `taller_mecanico` en tu servidor MySQL.
 
