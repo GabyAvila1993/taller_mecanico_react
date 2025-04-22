@@ -176,7 +176,3 @@ const API_BASE = "http://localhost:5000/api";
 ```
 
 ---
-
-## 📧 Contacto
-
-Si tienes alguna pregunta o problema, no dudes en abrir un issue en el repositorio o contactarme en [tu-email@example.com](mailto:tu-email@example.com).
