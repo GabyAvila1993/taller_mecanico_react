@@ -34,14 +34,16 @@ function App() {
     marca: '',
     modelo: '',
     patente: '',
+    anio: '',
   });
 
   const [nuevaReparacion, setNuevaReparacion] = useState({
     descripcion_problema: '',
+    costo: '',
     fecha: '',
   });
 
-  const [paso, setPaso] = useState(1); // Controla el paso actual del formulario
+  const [paso, setPaso] = useState(1); 
 
   // Obtener datos del backend
   useEffect(() => {
@@ -141,6 +143,13 @@ function App() {
               onChange={(e) => setNuevoVehiculo({ ...nuevoVehiculo, patente: e.target.value })}
               required
             />
+            <input
+              type="text"
+              placeholder="Año"
+              value={nuevoVehiculo.anio}
+              onChange={(e) => setNuevoVehiculo({ ...nuevoVehiculo, anio: e.target.value })}
+              required
+            />
           </>
         )}
 
@@ -152,6 +161,13 @@ function App() {
               placeholder="Descripción del problema"
               value={nuevaReparacion.descripcion_problema}
               onChange={(e) => setNuevaReparacion({ ...nuevaReparacion, descripcion_problema: e.target.value })}
+              required
+            />
+            <input
+              type="text"
+              placeholder="Precio"
+              value={nuevaReparacion.costo}
+              onChange={(e) => setNuevaReparacion({ ...nuevaReparacion, costo: e.target.value })}
               required
             />
             <input
