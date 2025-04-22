@@ -1,42 +1,137 @@
+/* Fondo oscuro elegante */
+body {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor general centrado */
 #root {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Títulos */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Formulario estilizado */
+form {
+  background-color: #2c2c3e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
 }
 
-.card {
-  padding: 2em;
+form h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
-.read-the-docs {
+input {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 12px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+input::placeholder {
   color: #888;
+}
+
+/* Botón */
+button {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background-color: #022e8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #0e85d4;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 8px;
+  margin-top: 2rem;
+}
+
+thead th {
+  background: linear-gradient(to bottom,#1ca8f8, #013464);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+tbody td {
+  background-color: #c9d1e7;
+  color: #333;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+tbody td:first-child {
+  background: linear-gradient(to bottom, #1ca8f8, #013464);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.btn-eliminar {
+  background-color: #800101; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-eliminar:hover {
+  background-color: #f73232; /* rojo más oscuro al pasar el mouse */
+}
+
+.btn-editar {
+  background-color: #0fa501; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-editar:hover {
+  background-color: #46ec37; 
 }
