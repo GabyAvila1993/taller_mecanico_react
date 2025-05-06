@@ -4,6 +4,7 @@ import {
   fetchVehiculos,
   fetchReparaciones,
 } from "../../services/api";
+import "./ClienteLista.css"; // Asegúrate de tener un archivo CSS para estilos
 
 const ClientesList = () => {
   const [clientes, setClientes] = useState([]);
@@ -62,6 +63,9 @@ const ClientesList = () => {
     }
   };
 
+
+
+  
   // Función para editar un cliente
   const handleEditarCliente = (cliente) => {
     setModoEdicion(true);
